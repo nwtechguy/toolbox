@@ -127,19 +127,21 @@ boost_system
 boost_thread
 univalue
 boost_program_options
-crypto
-ssl
 spdlog
 pthread
 mysqlcppconn-static
+ssl
+crypto
 mysqlclient
 dl
 z
+resolv
 )
 
 set(ext_lib_paths ${BITCOIN_SRC_DIR}/src/.libs
 ${BITCOIN_SRC_DIR}/src/leveldb
 ${BOOST_SRC_DIR}/stage/lib
+${BITCOIN_SRC_DIR}/db4/lib
 ${BITCOIN_SRC_DIR}/src/crypto
 ${BITCOIN_SRC_DIR}/src/secp256k1/.libs/
 ${BITCOIN_SRC_DIR}/src/univalue/.libs/
@@ -147,6 +149,7 @@ ${BITCOIN_SRC_DIR}/src/qt/
 ${BITCOIN_SRC_DIR}/src/
 ${MYSQLCONN_DIR}/jdbc/
 ${MYSQLCONN_DIR}/
+${MYSQLCONN_DIR}/lib64
 ${SPDLOG_DIR}/build/
 )
 
