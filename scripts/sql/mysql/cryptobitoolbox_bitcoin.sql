@@ -1,4 +1,4 @@
-drop database cryptobitoolbox_bitcoin;
+drop database if exists cryptobitoolbox_bitcoin;
 
 -- Crypto.BI Toolbox (https://Crypto.BI/)
 -- Author: José Fonseca 2019-10-03 (https://zefonseca.com)
